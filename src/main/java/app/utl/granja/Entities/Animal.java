@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "Granjero")
+@Table(name = "Animal")
 @Inheritance(strategy = InheritanceType.JOINED) // <-- Indica a JPA que es una clase padre
 @Getter
 @Setter
@@ -20,7 +20,7 @@ public class Animal {
     private Long id_animal;
     private String tipo_animal;
     private Double peso;
-    private int años;
+    private int edad_animal;
 
 
 
